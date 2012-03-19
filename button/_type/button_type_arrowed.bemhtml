@@ -1,0 +1,8 @@
+block button, mod type arrowed {
+    content: [
+        this.ctx.content,
+        {
+            elem: 'arrow',
+            tag: 'span'
+        }]
+}
