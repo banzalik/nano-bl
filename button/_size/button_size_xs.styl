@@ -1,0 +1,25 @@
+.button_size_xs {
+    padding: 1px 8px;
+    font-size: 11px;
+
+    &:active {
+        padding: 2px 8px 0px;
+
+    }
+
+    & > .button__arrow {
+        width: .85em;
+        height: .85em;
+    }
+
+    &.button_arrowed,
+    &.button_arrowed:active {
+        padding-right: 7px;
+        margin-right: 6px;
+    }
+
+    button&.button_arrowed:active:hover{o-selector-hack} {
+        padding-left: 8px;
+        padding-right: 7px;
+    }
+}
