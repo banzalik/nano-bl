@@ -1,0 +1,25 @@
+// Big button
+.button_size_l {
+    padding: 3px 12px;
+    font-size: 15px;
+
+    &:active {
+        padding: 4px 12px 2px;
+    }
+
+    button&.button_arrowed:active:hover{o-selector-hack} {
+        padding-right: 11px;
+        padding-left: 12px;
+    }
+
+    & > .button__arrow {
+        width: 1.07em;
+        height: 1.07em;
+    }
+
+    &.button_arrowed,
+    &.button_arrowed:active {
+        padding-right: 11px;
+        margin-right: 10px;
+    }
+}
