@@ -1,0 +1,32 @@
+// Default config
+_ie ?= false // For smart IE including
+vendor-prefixes ?= webkit moz ms o official // Default used prefixes
+
+// Based on visionmedia's nib/vendor.styl 
+vendor(prop, args, only = null, ignore = null)
+    push(only, 'official') // Implied official properties
+    for prefix in vendor-prefixes
+        unless (only and !(prefix in only)) or (ignore and prefix in ignore) or _ie
+            if prefix == official
+                {prop}: args
+            else
+                {'-' + prefix + '-' + prop}: args
+
+border-radius()
+    vendor('border-radius', arguments, webkit moz);
+
+box-shadow()
+    vendor('box-shadow', arguments, webkit moz);
+
+transform()
+    vendor('transform', arguments, webkit moz o);
+
+background-size()
+    vendor('background-size', arguments, moz o);
+
+background-origin()
+    vendor('background-origin', arguments, moz o);
+
+
+// Selector hacks. Use in selectors .class{o-selector-hack}
+o-selector-hack = ', x:-o-prefocus'
