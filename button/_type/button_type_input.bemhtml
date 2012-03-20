@@ -1,0 +1,14 @@
+block button, mod type input {
+    tag: 'input',
+    attrs: {
+
+            var ctx = this.ctx,
+                a = { 'type': 'button' },
+                props = ['value'], p;
+
+            while(p = props.pop()) ctx[p] && (a[p] = ctx[p]);
+
+            return a;
+
+        }
+}

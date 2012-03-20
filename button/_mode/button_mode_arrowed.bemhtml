@@ -1,4 +1,4 @@
-block button, mod type arrowed {
+block button, mod mode arrowed {
     content: [
         this.ctx.content,
         {
