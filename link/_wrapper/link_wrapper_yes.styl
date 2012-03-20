@@ -1,0 +1,22 @@
+.link_wrapper_yes {
+    display: inline-block;
+
+    white-space: nowrap; // Would be a class for multiline links
+    text-decoration: none;
+
+    & .ico {
+        margin-top: -4px;
+
+        vertical-align: middle;
+    }
+
+}
+
+.link_pseudo_yes.link_wrapper_yes .link__inner {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.link_pseudo_yes.link_wrapper_yes {
+    border-bottom: 0;
+}

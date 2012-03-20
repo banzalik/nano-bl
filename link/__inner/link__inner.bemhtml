@@ -1,0 +1,3 @@
+block link, elem inner {
+    tag: 'span'
+}
