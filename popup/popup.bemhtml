@@ -1,0 +1,9 @@
+block popup {
+    content: [{
+        elem: 'tail'
+    },
+    {
+        elem: 'content',
+        content: this.ctx.content
+    }]
+}

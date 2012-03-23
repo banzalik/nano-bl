@@ -1,0 +1,26 @@
+// Popup's line (like for dropdowns)
+.popup__line {
+    display: block;
+    padding: 3px 12px;
+}
+
+// Find out if it needs to be an extra class, not multiclass one
+// Also, all the color/decoration things could go somewhere else?
+.popup__line.link {
+    display: block;
+
+    white-space: nowrap; // Inline-only
+
+    line-height: 1.5em;
+
+    // Blocky hover dropdown style
+    .popup_theme_blocky & {
+        text-decoration: none;
+
+        color: #000;
+    }
+
+    .popup_theme_blocky &:hover {
+        background-color: #85CDFF;
+    }
+}
